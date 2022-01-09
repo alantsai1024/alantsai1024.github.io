@@ -1,0 +1,158 @@
+/*第一頁*/
+#s1{
+    background:linear-gradient(60deg,rgb(223, 104, 104),rgb(135, 216, 135));
+}
+.i1{
+    display: inline-flex;
+}
+.tit{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/*第二頁*/
+#s2{
+background: linear-gradient(80deg,rgb(255, 169, 10),rgb(226, 136, 136));
+}
+.i2{
+    display: inline-flex;
+}
+
+/*第三頁*/
+#s3{
+    background:linear-gradient(225deg,rgb(112, 112, 223),tomato)
+}
+.i3{
+    display: inline-flex;
+}
+
+  #s4{
+      background:linear-gradient(135deg,lightblue,pink);
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+  }
+  .title    {
+      font-size: 50px;
+      font-weight: bolder;
+      color: red;
+      text-align: center;
+  }
+  .calculator {
+    width:400px;
+    height:450px;
+    box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    margin-left: 35%;
+    margin-top:80px;
+  }
+  .cal-box{
+    width: 400px;
+    height:600px;
+    margin-top:auto;
+      
+  }
+  #display{
+    width: 85%;
+    height: 60px;
+    margin-left:9px;
+    margin-top: 30px;
+   text-align: right;
+   font-size: xx-large;
+   background: rgba(255, 255, 255,.05); 
+   backdrop-filter: blur(30px);
+   border: transparent;
+   border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  .button{
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow:  20px 20px 50px rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    width: 80px;
+    height: 80px;
+    font-size: xx-large;
+    
+}
+.button:hover{
+  border: transparent;
+}
+.clearbutton{
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow:  20px 20px 50px rgba(0,0,0,0.1);
+    background: rgb(247, 2, 2); 
+    color: white;
+}
+.mathbutton{
+  background: rgb(0, 0, 5); 
+  color: white;
+}
+.title2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.BUILTIN{
+    display: inline-flex;
+  
+}
+.last{
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    width: 150px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+.home{
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    margin-right: auto;
+    width: 150px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px; 
+    backdrop-filter: blur(20px);
+}
+.last:hover{
+    color: green;
+    box-shadow:0 0 5px  lightblue,
+               0 0 25px lightblue,
+               0 0 50px lightblue,   
+               0 0 200px lightblue;
+    background-color: lightblue;
+    border: none;    
+}
+.home:hover{
+    color: green;
+    font-weight: bolder;
+    box-shadow:0 0 5px  tomato,
+               0 0 25px tomato,
+               0 0 50px tomato,   
+               0 0 200px tomato;
+    background-color: tomato;
+    border: none;           
+}

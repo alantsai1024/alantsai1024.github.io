@@ -1,0 +1,56 @@
+<!DOCTYPE html>                 <!--宣告語法為html-->
+<html lang="zh-tw">      <!--宣告網頁語言-->           
+    <head>                                          <!--添加外部功能-->
+        <meta charset="utf-8" name="author" content="蔡宇倫">       <!--回傳作者--> 
+		<meta name="keyword" content="ALAN的網站">	                <!--宣告關鍵字-->  
+		<meta http-equiv="Content-Language" content="Zh-TW">         <!--回傳語言-->
+		<meta name="description" content="ALAN的網站">	             <!--網站描述-->
+        <link rel=stylesheet type="text/css" href="home.css">        <!--導入css檔，後面href是打導入css檔的名稱-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>                            <!--導入外部js檔，這是添加整頁滾動的功能，之後每一週的前面都要有這行-->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet">      <!--導入外部css檔，這是添加整頁滾動的功能，之後每一週的前面都要有這行-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>                  <!--導入外部js檔，這是添加整頁滾動的功能，之後每一週的前面都要有這行-->
+                                                                            <!--上面的三行要照順序放-->
+        <title>蔡宇倫的自主學習</title>          <!--分頁名稱-->
+</head>         
+
+        <body >                 <!--這裡是內文-->
+            <section>               
+                
+                        
+                        <header>                              <!--定義header區域，header為網頁區域最上方-->
+                            <a href="about.html" class="logo">蔡宇倫的自主學習</a>   <!--logo-->
+                            <ul>                                          <!--ul包住所有的清單項目-->
+                                <li ><a href="index.html"><b>首頁</b></a></li>       <!--li清單項目，用a href來設定頁面連結-->
+                                <li><a href=""><b>學習週誌</b></a>            <!--下拉式選單的最外層的清單項目-->
+                                    <div class="qqq">                     <!--用class定義一個區域的名稱，class後面取的名字須在css中的名字前加 .  ex:class="abc" 在css中輸入 .abc{}  -->     
+                                        <ul>                            <!--ul包住所有下拉式選單的項目-->
+                                            <li><a href="w1.html">第一周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w2.html">第二周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->    
+                                            <li><a href=".html">第三周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w4.html">第四周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w5.html">第五周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w6.html">第六周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w7.html">第七周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w8.html">第八周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w9.html">第九周</a></li>          <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                            <li><a href="w10.html">第十周</a></li>         <!--li下拉式選單項目，用a href來設定頁面連結-->
+                                        </ul></div>                                     <!--class區域的結束-->
+                                    </li>               <!--下拉式選單的最外層的清單項目的結束-->
+                                <li ><a href="about.html"><b>關於我</b></a></li>        <!--li清單項目，用a href來設定頁面連結-->
+                            </ul>
+                        </header>               <!--最上面欄位的區域結束--> 
+                        <div id="page1" >       <!--設定跑馬燈的樣式要用id來設定，id後面取的名字須在css中的名字前加 # ex:id="abc" 在css中輸入 #abc{} -->
+                       網頁設計
+                    </div>               <!--page1結束區域-->
+                              <!--整頁式滾動第一頁的區域結束-->
+                    
+                    
+                                        <!--整頁式滾動第二頁的區域結束--> 
+            <script>                   //js語法輸入方式
+                $( "#example" ).fullpage({          //輸入最上面id裡取的名稱
+                    navigation: true, // 顯示導行列
+                    navigationPosition: "right" // 導行列位置
+                });
+        </script>               <!--js結束--> 
+        </body>             <!--內文結束--> 
+</html>                      <!--html語法結束-->        

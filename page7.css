@@ -1,0 +1,109 @@
+/*第一頁*/
+#s1{
+    background:linear-gradient(60deg,rgb(223, 104, 104),rgb(135, 216, 135));
+}
+.i1{
+    display: inline-flex;
+}
+.tit{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/*第二頁*/
+#s2{
+background: linear-gradient(80deg,rgb(255, 169, 10),rgb(226, 136, 136));
+}
+.i2{
+    display: inline-flex;
+}
+
+/*第三頁*/
+#s3{
+    background:linear-gradient(225deg,rgb(112, 112, 223),tomato)
+}
+.i3{
+    display: inline-flex;
+}
+.home{
+    font-size: 30px;
+    font-weight: bold;
+    width: 150px;
+    height: 80px;
+    color: lightgreen;
+    text-align: center;
+    border-radius: 20px;
+    padding-top:35px ;
+    margin-left: 680px;
+    margin-top: -120px;
+    color: black;
+  }
+  .home:hover{
+    background-color: orange;
+     box-shadow: 0 0 5px orange,
+                  0 0 25px orange,
+                  0 0 50px orange,
+                  0 0 200px  orange;
+      color:white ;
+      cursor: pointer;
+      text-shadow: none;
+  }
+  .next{
+    font-size: 30px;
+    font-weight: bold;
+    width: 150px;
+    height: 80px;
+    color: lightgreen;
+    text-align: center;
+    border-radius: 20px;
+    padding-top:35px ;
+    margin-left: 900px;
+    margin-top: -120px;
+    color: black;
+  }
+  .next:hover{
+    background-color: red;
+     box-shadow: 0 0 5px red,
+                  0 0 25px red,
+                  0 0 50px red,
+                  0 0 200px  red;
+      color:white ;
+      cursor: pointer;
+      text-shadow: none;
+  }
+  .before{
+    font-size: 30px;
+    font-weight: bolder;
+    width: 150px;
+    height: 80px;
+    color: lightgreen;
+    text-align: center;
+    border-radius: 20px;
+    padding-top:35px ;
+    margin-left: 480px;
+    margin-top: 100px;
+    color: black;
+  }
+  .before:hover{
+    background-color: rgb(238, 161, 61);
+     box-shadow: 0 0 5px blue,
+                  0 0 25px blue,
+                  0 0 50px blue,
+                  0 0 200px  blue;
+      color:white ;
+      cursor: pointer;
+      text-shadow: none;
+  }
+  #s4{
+      background:linear-gradient(135deg,lightblue,pink);
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+  }
+  .title    {
+      font-size: 50px;
+      font-weight: bolder;
+      color: red;
+      text-align: center;
+  }

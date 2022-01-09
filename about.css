@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat:repeat-y;
+    display: flex;
+    justify-content: center;
+    
+}
+header{
+    
+    z-index: 1;
+    background-color:rgba(255, 255, 255, 0.4);
+        position:absolute;    
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+header .logo {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header ul{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header ul li{
+    list-style-type: none;
+    max-width: 200px;
+   margin-left:  20px;
+   padding: 15px;
+   height: 50px;
+  
+}
+header ul li a{
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: black;
+    font-size: large;
+    padding-bottom: 10px; 
+}
+header ul li a:hover{
+    background-color: yellow;
+    color: purple;
+}
+section{
+    text-align:center;
+    z-index: 0;
+  
+}
+#page1{
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 2px yellow;
+    font-size: 10em;
+    text-decoration: none;
+    text-transform: upp  ercase;
+    letter-spacing: 20px;
+   
+    font-weight:bold;
+    padding-top: 100px;
+   background:url('back.png') ;
+    -webkit-background-clip:text;
+   background-position: 0 0;
+   animation: back 20s linear infinite;
+    
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+
+    }
+}
+ #page2{
+    
+    font-weight:bold;
+    font-size: 18px;
+   
+}
+
+
+  header ul li .qqq ul  {
+    display: none;
+  position: absolute;
+}
+ 
+ header ul li:hover .qqq ul {
+    display: block;
+    position: absolute;
+    
+    height: 40px;
+   width:200px;
+}
+  header ul li:hover .qqq ul{
+    margin: 10px;
+    display: block;
+    
+}
+ header ul li .qqq ul li{
+   font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    margin-left: -30px;
+    font-size: 20px;
+   
+}
+ header ul li .qqq ul li:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    
+}
+ .container{
+   margin-top: 35%;
+   margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width:1200px;
+   left:50%;
+   top: 50%;
+    transform: translate(-50%,-50%);
+   
+   width: 100%;
+}
+ .container .card{
+   
+    width:1200px;
+    height:600px;
+    box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+   border-top: 1px solid rgba(255, 255, 255, 0.5);
+   border-left: 1px solid rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(30px);
+   
+   animation: aaa 1s;
+}
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transition: 1s;
+   
+    animation: aaa 1s;
+}
+
+
+
+.animate{
+    font-size: 50px;
+    position: relative;
+    margin-top: 50px;
+   font-weight: bold;
+    letter-spacing: 5px;
+}
+.animate span{
+    animation: abc 4s infinite;
+}
+h4 span:nth-child(1){
+    animation-delay: 0.5s;
+}
+h4 span:nth-child(2){
+    animation-delay: 0.6s;
+}
+h4 span:nth-child(3){
+    animation-delay: 0.7s;
+}
+h4 span:nth-child(4){
+    animation-delay: 0.8s;
+}
+h4 span:nth-child(5){
+    animation-delay: 0.9s;
+}
+h4 span:nth-child(6){
+    animation-delay: 1s;
+}
+h4 span:nth-child(7){
+    animation-delay: 1.1s;
+}
+@keyframes abc{
+    0%,100%{
+            color: blue;
+          
+            
+    }
+    25%,75%{
+       color: transparent;
+    }
+}
+.container2{
+    position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     max-width:1200px;
+    left:50%;
+    top:1050px;
+     transform: translate(-50%,-50%);
+    margin-top: 100px;
+    width: 100%;
+ }
+  .container2 .card2{
+    
+     width:1200px;
+     height:600px;
+     box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 20px;
+     background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    
+    
+    box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    
+    animation: aaa 1s;
+ }
+ .container2 .card2 .content2{
+     
+     transition: 1s;
+    animation: aaa 1s;
+    
+ }
+ 
+ 
+
+ .container2 .card2 .content2{
+     overflow:visible;
+     position: relative;
+     margin-top: 42px;
+     width:420px ;
+        height: 500px;
+    transition: 0.8s;
+    margin-left:80px;
+    z-index: 1;
+    transition: all 1s;
+    perspective:800px ;
+    
+ }
+ .container2 .card2 .i .content2 img{
+    border-radius: 70px;
+ }
+ 
+ .container2 .card2 .i:hover .content2{
+    transform:perspective(500px) rotateY(180deg);
+    opacity: 0;
+}
+
+.container2 .card2 .c1{
+    z-index: 1;
+     width: 600px;
+     height: 90%;
+     margin-top: 30px;
+     margin-left: 50px;
+     border-radius: 20px;
+     padding-top: 40px;
+     padding-left:30px;
+ }
+ .container2 .card2 .c1 h3{
+     font-size: 28px;
+     font-weight: bold;
+     z-index: 1;
+
+ }
+ .container2 .card2 .i .i2{
+       margin-top: -500px;
+       margin-left: 80px;
+        width:420px ;
+        height: 500px;
+        transform:perspective(500px) rotateY(180deg);
+        transition: 1s;
+        border-radius: 70px;
+        backface-visibility: hidden;
+ }
+ .container2 .card2 .i:hover .i2{
+    transform:perspective(500px) rotateY(360deg);
+    border-radius: 70px;
+ }
+ .container2 .card2 .i2 img{
+    border-radius: 70px;
+ }
+
+ 
+ .container3{
+    margin-top: 350px;
+    margin-left: 160px;
+  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     max-width:1200px;
+    
+    z-index: 1;
+    width: 100%;
+   
+   ;
+ }
+  .container3 .card3{
+    z-index: 1;
+     width:1200px;
+     height:600px;
+     box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 20px;
+     background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    animation: aaa 1s;
+    
+ }
+ .container3 .card3 .content3{
+     padding: 20px;
+     text-align: center;
+     transition: 1s;
+     z-index: 1;
+     animation: aaa 1s;
+ }
+ .container3 .card3 .content3 .p3{
+     margin-top: -100px;
+     position: relative;
+ }
+
+ .htmlfont{
+     margin-left: -800px;
+     font-size: 30px;
+     font-weight: bold;
+ }
+ .cssfont{
+     margin-top: 50px;
+     font-size: 30px;
+     font-weight: bold;
+     margin-left: -800px;
+ }
+ .container3 .card3 .content3 .htmlskill{
+    background:rgb(172, 169, 169);
+    height: 40px;
+    width: 1000px;
+    margin-top: 20px;
+   border-radius: 30px;
+   font-size: 30px;
+    
+   animation: html 3s infinite;
+   z-index: 1;
+}
+.container3 .card3 .content3 .htmlskill:hover{
+    width: 90%;
+    height: 40px;
+    background:lawngreen ;
+    animation: none;
+}
+.container3 .card3 .content3 .outhtml:hover .htmlskill{
+    width: 90%;
+    height: 40px;
+    background:lawngreen ;
+    animation: none;
+}
+.container3 .card3 .content3 .outhtml{
+    background:rgb(172, 169, 169);
+    height: 40px;
+    width: 1000px;
+    margin-top: 20px;
+   border-radius: 30px;
+   font-size: 30px;
+  
+   z-index:-1;
+}
+.container3 .card3 .content3  .cssskill{
+   background:rgb(172, 169, 169);
+   height: 40px;
+   width: 1000px;
+   margin-top:20px;
+  border-radius: 30px;
+  font-size: 30px;
+  transition: 1.5s;
+  animation: css 3s infinite;
+  z-index:1;
+}
+.container3 .card3 .content3  .cssskill:hover{
+    animation: none;
+    width: 60%;
+    height: 40px;
+    background: lawngreen;
+}
+.container3 .card3 .content3  .outcss{
+    background:rgb(172, 169, 169);
+    height: 40px;
+    width: 1000px;
+    margin-top:20px;
+   border-radius: 30px;
+   font-size: 30px;
+   z-index:-1;
+ }
+ .container3 .card3 .content3  .outcss:hover  .cssskill{
+    animation: none;
+    width: 60%;
+    height: 40px;
+    background: lawngreen;
+ }
+@keyframes html {
+    0%{
+        background: lawngreen;
+        width: 0%;
+        height: 40px;
+    }
+    
+    100%{
+        background: lawngreen;
+        width: 90%;
+        height: 40px;
+    }
+    
+}
+@keyframes css {
+    0%{
+        background: lawngreen;
+        width: 0%;
+        height: 40px;
+    }
+    
+    100%{
+        background: lawngreen;
+        width: 60%;
+        height: 40px;
+    }
+}
+.container3 .card3 .content3 .outbootstrap{
+    background:rgb(172, 169, 169);
+    height: 40px;
+    width: 1000px;
+    margin-top:20px;
+   border-radius: 30px;
+   font-size: 30px;
+    z-index:-1;
+}
+.container3 .card3 .content3 .outbootstrap:hover .bootstrapskill{
+    animation: none;
+    background: lawngreen;
+    width: 40%;
+    height: 40px;
+}
+.container3 .card3 .content3 .bootstrapfont{
+    margin-left: -800px;
+    font-size: 30px;
+    font-weight: bold;
+   margin-top: 50px;
+}
+.container3 .card3 .content3 .bootstrapskill{
+    background:rgb(172, 169, 169);
+    height: 40px;
+    width: 1000px;
+    margin-top:20px;
+   border-radius: 30px;
+   font-size: 30px;
+   transition: 1.5s;
+   animation: bootstrap 3s infinite;
+   z-index:1;
+}
+@keyframes bootstrap {
+    0%{
+        background: lawngreen;
+        width: 0%;
+        height: 40px;
+    }
+    
+    100%{
+        background: lawngreen;
+        width: 40%;
+        height: 40px;
+    }
+}
+.container3 .card3 .content3 .bootstrapskill:hover{
+    animation: none;
+    background: lawngreen;
+    width: 40%;
+    height: 40px;
+}
+.footer{
+    width: 1519px;
+    height:50px;
+    padding-bottom:50px;
+    background-color: rgba(0, 0, 5, 0.05);
+   margin-top: 20px;
+}
+
+ 
+ 
+ 
+
+

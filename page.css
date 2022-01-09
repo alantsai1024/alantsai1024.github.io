@@ -1,0 +1,43 @@
+.light {
+    width: fit-content;
+    padding: 25px 30px;
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 40%;
+    
+  }
+  .light:hover {
+    background-color: orange;
+    color: white;
+    box-shadow: 0 0 5px orange,
+                0 0 25px orange,
+                0 0 50px orange,
+                0 0 200px  orange;
+}
+.next {
+  width: fit-content;
+  padding: 25px 30px;
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 50%;
+  margin-top: -80px;
+  
+}
+.next:hover {
+  background-color: turquoise;
+  color: white;
+  box-shadow: 0 0 5px turquoise,
+              0 0 25px   turquoise,
+              0 0 50px  turquoise,
+              0 0 200px  turquoise;
+}

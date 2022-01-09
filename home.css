@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;                              /* 消除預設值*/
+    padding: 0;                             /* 消除預設值*/
+    box-sizing: border-box;                     /*設定邊框外緣的範圍內的寬高*/
+    
+}
+body{                               /*body區域的調整*/
+    margin: 0;                          /*消除預設值*/
+    padding: 0;                         /*消除預設值*/
+    min-height: 100vh;                      /*頁面高度*/
+    background-image:url(bg.jpg);         /*網頁背景圖片*/
+    background-size: cover;                 /*圖片覆蓋整個頁面*/
+    background-repeat:no-repeat;            /*圖片不要重複顯示好幾張*/
+    display: flex;                           /*排版為單向排版*/   
+    justify-content: center;                    /*對齊主軸線中間*/
+    
+}
+header{                     /*最上面區域*/
+        
+    background-color:rgba(255, 255, 255, 0.4);              /*rega(紅，綠，藍，透明度0~1)*/
+        position:fixed;                                     /*位置固定*/
+        top: 0;                                             /*間隔頂部為零*/        
+        left: 0;                                             /*間隔最左邊為零*/ 
+        width: 100%;                                        /*寬度站整個頁面的寬*/
+        padding: 30px 100px;                               /*控制內文與邊框的距離*/         
+        display: flex;                                       /*排版為單向排版*/ 
+        justify-content: space-between;                         /*字與字間有空隔*/
+        align-items: center;                                    /*對齊中間*/
+     }
+header .logo {                                      /*控制logo屬性*/
+    color: black;                               /*字的顏色*/
+    font-weight: 700;                                /*字的粗細*/        
+    text-transform: uppercase;                      /*英文字變為大寫*/
+    font-size: 2em;                                     /*字的大小*/
+    text-decoration: none;                          /*字改變型態，像是加底線*/
+    letter-spacing: 2px;                            /*字的間距*/
+}
+header ul{                              /*調整最上面區域的欄位屬性*/         
+    display:inline-flex;                    /*排版為橫的單向*/
+    justify-content: space-between;          /*字與字間有空隔*/
+    align-items: center;                    /*對齊中間*/
+    
+}
+header ul li{                        /*調整最上面區域欄位的清單項目屬性*/
+    list-style-type: none;              /*項目去除前面的點*/
+    max-width: 200px;                       /*最大寬度*/
+   margin-left:  20px;                      /*外圍間隔左邊距離*/
+   padding: 15px;                           /*內文距離邊框距離*/
+   height: 50px;
+                               /*高度*/
+}
+header ul li a{                    /*調整最上面區域欄位的清單項目(最底層)*/
+    padding: 20px 40px;                 /*內文距離邊框距離*/
+    text-decoration: none;               /*字改變型態，像是加底線*/
+    border-radius: 20px;                   /*邊框圓弧曲線*/
+    color: black;                        /*清單字的顏色*/       
+    font-size: large; 
+    padding-bottom: 10px; 
+    font-weight: bold;                        /*字的大小*/
+}
+header ul li a:hover{                   /*hover為滑鼠鼠標指到後的變化*/
+    background-color: yellow;           /*背景變黃*/
+    color: purple;
+}                          /*字的顏色*/
+section{                /*section區域控制*/
+    text-align:center;          /*文字對齊中間*/
+   
+
+}
+#page1{                         /*此為div裡的id屬性，所以前面加# */
+    text-align: center;                 /*文字對齊中間*/    
+    color: transparent;                         /*顏色透明*/        
+    -webkit-text-stroke: 2px yellow;                /*字邊框顏色*/
+    font-size: 10em;                                /*字大小*/
+    text-decoration: none;                          /*字的型態*/
+    text-transform: uppercase;                      /*字為大小*/
+    letter-spacing: 20px;                           /*字的粗細*/
+    margin-top: 200px;
+    font-weight:bold;                               /*字的粗細*/
+    padding-top: 100px;                            /*內文與邊框頂部距離*/
+   background:url('back.png') ;                  /*動畫圖片*/
+    -webkit-background-clip:text;               /*字邊框*/
+   background-position: 0 0;                    /*很重要，設定圖片位置*/
+   animation: back 20s linear infinite;         /*back為定義動畫名稱，20s為持續動畫時間，infinite是永久循環播放*/
+    
+}
+@keyframes back{            /*css的動畫語法*/
+    100%{                               /*動畫進度*/
+        background-position: 2000px 0;      /*改變數字可以控制跑馬燈速度*/
+
+    }
+}
+header ul li .qqq ul  {                 
+    display: none;                  /*下拉式選單項目隱藏*/
+    
+}
+ 
+header ul li:hover .qqq ul {
+    display: block;                     /*垂直排列*/
+    position: absolute;             /*被定位面滾動*/
+    
+    height: 40px;                       /*高*/
+   width:200px;                         /*寬*/
+}
+header ul li:hover .qqq ul{
+    margin: 10px;                        /*上下外圍距離*/   
+    display: block;                     /*排列垂直*/
+}
+header ul li .qqq ul li{
+    background-color:rgba(255,255,255,0.8);           /*rega(紅，綠，藍，透明度0~1)*/
+    border-radius: 20px;                            /*邊框圓弧曲線*/
+    text-align: center;                             /*對齊中間*/
+    margin-left: -30px;                             /*外框距離左邊*/
+    font-size: 20px;                                        /*字大小*/
+   
+    
+}
+header ul li .qqq ul li:hover{           /*hover為滑鼠鼠標指到後的變化*/
+    background-color: yellow;       /*背景*/
+    color: black;               /*字顏色*/
+    font-weight: bold;          /*字的粗細*/
+}
+.light {                        /*按鈕霓虹燈效果*/
+    width: fit-content;                     /*按鈕與裡面的內文剛好符合*/
+    padding: 25px 30px;                     /*內文與邊框距離*/
+    color: black;                           /*字顏色*/
+    font-size: 24px;                        /*字大小*/
+    text-transform: uppercase;          /*英文字大寫*/
+    transition: 0.5s;                   /*動畫延遲*/
+    letter-spacing: 4px;                /*字與字間隔*/
+    cursor: pointer;                    /*鼠標碰到此區域變成的樣字*/
+    font-weight: bold;                  /*字的粗細*/
+    margin-left: 40%;                   /*外框距離左邊*/
+    
+  }
+  .light:hover {                 /*hover為滑鼠鼠標指到後的變化*/
+    background-color: orange;               /*背景*/
+    color: white;                               /*字顏色*/
+    box-shadow: 0 0 5px orange,             /*陰影效果*/
+                0 0 25px orange,
+                0 0 50px orange,
+                0 0 200px  orange;
+}

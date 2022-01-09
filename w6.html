@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+    <head>
+        <title>第六周</title>
+        <meta charset="utf-8" name="author" content="蔡宇倫">
+        <meta name="keyword" content="蔡宇倫的自主學習第三周">	
+        <meta http-equiv="Content-Language" content="Zh-TW">
+        <meta name="description" content="蔡宇倫的自主學習">	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  /> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script> 
+		<link rel=stylesheet type="text/css" href="page6.css">               <!--導入page6.css檔-->
+
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
+    </head>
+            <body>
+                    <div id="example">
+                                    <!--第一頁-->
+                                    <div class="section" id="s1" data-aos="fade-right"><div class="tit">第六周:用編譯器打出文字，在內網上顯示文字的跑馬燈和速度變換的效果</div>
+                                           <font style="font-size: 25px;font-weight: bold;"> 第一步:打出文字</font>
+                                           <div class="i1">
+                                            <img src="w6-1.png" width="800px" height="600px">
+                                            <img src="w6-2.png" width="800px" height="600px">
+                                        </div> 
+                                    </div> 
+                                            <!--第二頁-->
+                                            <div class="section" id="s2">
+                                                <font style="font-size: 25px;font-weight: bold;">第二步:在文字外用< marquee>標籤包住</font>
+                                                  <div class="i2">
+                                                       <img src="w6-3.png"  width="800px" height="600px">
+                                                       <video src="w6-4.mp4"  width="800px" height="600px" controls></video>
+                                                </div>
+                                            </div> 
+                                                    <!--第三頁-->
+                                                    <div class="section" id="s3">
+                                                        <font style="font-size: 25px;font-weight: bold;">第三步:在< marquee> 標籤裡打scrollamount="數字"</font>
+                                                           <div class="i3">
+                                                               <img src="w6-5.png"  width="800px" height="600px">
+                                                               <video src="w6-6.mp4"  width="800px" height="600px" controls></video>
+                                                        </div>
+                                                    </div> 
+                                                        <!--收穫-->
+                                                                <div class="section" id="s4">
+                                                                     <div class="title">收穫:</div> <br>透過這次的學習，讓我更了解文字動畫效果。
+                                                                        <br>
+                                                                        <div class="button">
+                                                                            <div class="before" onclick="location.href='w5.html'">上一周</div>
+                                                                            <div class="home" onclick="location.href='index.html'">回首頁</div>
+                                                                            <div class="next"onclick="location.href='w7.html'">下一周</div>
+                                                                        </div>
+                                                                </div>
+                    </div>
+                            <script>
+                                                                AOS.init();
+								$( "#example" ).fullpage({
+									navigation: true, // 顯示導行列
+									navigationPosition: "right" // 導行列位置
+								});
+						    </script>
+              </body>                  
+    </html>

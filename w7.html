@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+    <head>
+        <title>第七周</title>
+        <meta charset="utf-8" name="author" content="蔡宇倫">
+        <meta name="keyword" content="蔡宇倫的自主學習第三周">	
+        <meta http-equiv="Content-Language" content="Zh-TW">
+        <meta name="description" content="蔡宇倫的自主學習">	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  /> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script> 
+		<link rel=stylesheet type="text/css" href="page7.css">             
+
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
+    </head>
+            <body>
+                    <div id="example">
+                                    <!--第一頁-->
+                                    <div class="section" id="s1" data-aos="fade-right"><div class="tit">第七周:用編譯器做出按鈕，並顯示在內網上</div>
+                                           <font style="font-size: 25px;font-weight: bold;"> 第一步:打上 < button >語法，並在標籤中輸入文字。</font>
+                                           <div class="i1">
+                                            <img src="w7-1.png" width="800px" height="600px">
+                                            <video src="w7-2.mp4" width="800px" height="600px" controls></video>
+                                        </div> 
+                                    </div> 
+                                         
+                                                        <!--收穫-->
+                                                                <div class="section" id="s4">
+                                                                     <div class="title">收穫:透過這周讓我了解到網頁的輸入功能。</div> <br>
+                                                                        <br>
+                                                                        <div class="button">
+                                                                            <div class="before" onclick="location.href='w6.html'">上一周</div>
+                                                                            <div class="home" onclick="location.href='index.html'">回首頁</div>
+                                                                            <div class="next"onclick="location.href='w8.html'">下一周</div>
+                                                                        </div>
+                                                                </div>
+                    </div>
+                            <script>
+                                                                AOS.init();
+								$( "#example" ).fullpage({
+									navigation: true, // 顯示導行列
+									navigationPosition: "right" // 導行列位置
+								});
+						    </script>
+              </body>                  
+   

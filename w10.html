@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+    <head>
+        <title>第十周</title>
+        <meta charset="utf-8" name="author" content="蔡宇倫">
+        <meta name="keyword" content="蔡宇倫的自主學習第三周">	
+        <meta http-equiv="Content-Language" content="Zh-TW">
+        <meta name="description" content="蔡宇倫的自主學習">	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  /> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script> 
+		<link rel=stylesheet type="text/css" href="page10.css">              
+
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
+    </head>
+            <body>
+                    <div id="example">
+                                    <!--第一頁-->
+                                    <div class="section" id="s1" data-aos="fade-right"><div class="tit">第十周：自行創作與學習和反思</div>
+                                           <font style="font-size: 25px;font-weight: bold;"> </font>
+                                           <div class="i1">
+                                           
+                                        </div> 
+                                    </div> 
+                                    <div class="section" id="s2" >
+                                        <div class="title2">自製計算機</div>
+                                        <div class="calculator">
+                                            <div class="cal-box">
+                                              <form name="calculator"  >
+                                                <input type="text" id="display" name="display" placeholder="0" readonly>
+                                                <br>
+                                                <input class="button"  type="button" value="7" onclick="calculator.display.value +='7'">
+                                                <input class="button"  type="button" value="8" onclick="calculator.display.value +='8'">
+                                                <input class="button"  type="button" value="9" onclick="calculator.display.value +='9'">
+                                                <input class="button mathbutton"  type="button" value="+" onclick="calculator.display.value +='+'">
+                                                <br> 
+                                                <input class="button"  type="button" value="4" onclick="calculator.display.value +='4'">
+                                                <input class="button"  type="button" value="5" onclick="calculator.display.value +='5'">
+                                                <input class="button"  type="button" value="6" onclick="calculator.display.value +='6'">
+                                                <input class="button mathbutton"  type="button" value="-" onclick="calculator.display.value +='-'">
+                                                <br> 
+                                                <input class="button"  type="button" value="1" onclick="calculator.display.value +='1'">
+                                                <input class="button"  type="button" value="2" onclick="calculator.display.value +='2'">
+                                                <input class="button"  type="button" value="3" onclick="calculator.display.value +='3'">
+                                                <input class="button  mathbutton"  type="button" value="×" onclick="calculator.display.value +='*'">
+                                                <br>
+                                                <input class="button clearbutton" type="button" value="C" onclick="calculator.display.value =''">
+                                                <input class="button" type="button" value="0" onclick="calculator.display.value +='0'">
+                                                <input class="button mathbutton"  type="button" value="=" onclick="calculator.display.value =eval(calculator.display.value)">
+                                                <input class="button mathbutton"  type="button" value="/" onclick="calculator.display.value +='/'">
+                                                <br>
+                        
+                                              </form>
+                                            </div>
+                                      </div>
+                             </div> 
+                                         
+                                                        <!--收穫-->
+                                                                <div class="section" id="s4">
+                                                                     <div class="title">學習與反思:<br><br>在計畫學習網頁時，我抱著美好的憧憬和興奮，一開始計畫學習進度時本以為自己會很輕鬆的完成，但是理想與現實的鴻溝令我在學習時遇到了許多問題，像是div這種簡單的容器語法，卻讓我花了大量的時間上網和查閱書籍去理解它，不過在這次的學習讓我發現網頁設計有趣的地方，也讓我發現自己對程式這塊有更精進的認識。</div> 
+                                                                        <br>
+                                                                            <div class="BUILTIN">
+                                                                                 <div class="last" onclick="location.href='w9.html'">上一頁</div>
+                                                                                 <div class="home" onclick="location.href='index.html'">回首頁</div>
+                                                                            </div>
+                                                                </div>
+                    </div>
+                            <script>
+                                                                AOS.init();
+								$( "#example" ).fullpage({
+									navigation: true, // 顯示導行列
+									navigationPosition: "right" // 導行列位置
+								});
+						    </script>
+              </body>                  
+   

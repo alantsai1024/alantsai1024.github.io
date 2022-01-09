@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+    <head>
+        <title>第九周</title>
+        <meta charset="utf-8" name="author" content="蔡宇倫">
+        <meta name="keyword" content="蔡宇倫的自主學習第三周">	
+        <meta http-equiv="Content-Language" content="Zh-TW">
+        <meta name="description" content="蔡宇倫的自主學習">	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  /> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script> 
+		<link rel=stylesheet type="text/css" href="page9.css">              
+
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">    
+    </head>
+            <body>
+                    <div id="example">
+                                    <!--第一頁-->
+                                    <div class="section" id="s1" data-aos="fade-right"><div class="tit">第九周:用編譯器做出按鈕並使按鈕按出後彈出訊息</div>
+                                           <font style="font-size: 25px;font-weight: bold;"> 第一步:在＜ｄｉｖ＞標籤中輸入ｏｎｃｌｉｃｋ＝＂自訂義名稱（）＂</font><br>
+                                           <div class="i1">
+                                            <img src="w9-1.png" width="1200px" height="600px">
+                                           
+                                        </div> 
+                                    </div> 
+                                            <!--第二頁-->
+                                            <div class="section" id="s2">
+                                                <font style="font-size: 25px;font-weight: bold;">第二步:在< body>標籤外打上ｓｃｒｉｐｔ的標籤，然後在ｆｕｎｃｔｉｏｎ語法後加上ａｌａｒｔ彈窗功能。</font><br>
+                                                  <div class="i2">
+                                                       <img src="w9-2.png"  width="800px" height="600px">
+                                                     
+                                                </div>
+                                            </div> 
+                                                    <!--第三頁-->
+                                                    <div class="section" id="s3">
+                                                        <font style="font-size: 25px;font-weight: bold;">第三步:查看滑鼠按下按鈕後是否有彈窗訊息。</font><br>
+                                                           <div class="i3">
+                                                               <video src="w9-3.mp4"  width="800px" height="600px" controls></video>
+                                                              
+                                                        </div>
+                                                    </div> 
+                                                        <!--收穫-->
+                                                                <div class="section" id="s4">
+                                                                     <div class="title">收穫:透過這周讓我對於js有初步的認識。</div> <br>
+                                                                        <br>
+                                                                        <div class="button">
+                                                                            <div class="before" onclick="location.href='w8.html'">上一周</div>
+                                                                            <div class="home" onclick="location.href='index.html'">回首頁</div>
+                                                                            <div class="next"onclick="location.href='w10.html'">下一周</div>
+                                                                        </div>
+                                                                </div>
+                    </div>
+                            <script>
+                                                                AOS.init();
+								$( "#example" ).fullpage({
+									navigation: true, // 顯示導行列
+									navigationPosition: "right" // 導行列位置
+								});
+						    </script>
+              </body>                  
+  
