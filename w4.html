@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <title>第四周</title>
+        <meta charset="utf-8" name="author" content="蔡宇倫">
+        <meta name="keyword" content="蔡宇倫的自主學習第三周">	
+        <meta http-equiv="Content-Language" content="Zh-TW">
+        <meta name="description" content="蔡宇倫的自主學習">	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet"  /> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script> 
+		<link rel=stylesheet type="text/css" href="page4.css">  
+        
+             <!--滾輪特效-->
+             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+             <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />   
+    </head>
+            <body>
+                    <div id="example">
+                                    <div class="section" id="s1" data-aos="fade-right">
+                                       <p align="center"><font style="font-size: 40px;font-weight: bolder;color: black;">第四周:用編譯器打出文字並學習在程式後面打出註解和縮排</font></p>
+                                        <br>
+                                        第一步:嘗試打出沒有縮排的程式
+                                        <br>
+                                        <img src="w4-3.png" width="1100px" height="550px">
+                                    </div>      
+                                            <div class="section" id="s2">
+                                                第二步:嘗試打出有縮排的程式
+                                                <br>
+                                                <img src="w4-2.png" width="1100px" height="550px">
+                                            </div> 
+                                                    <div class="section" id="s3">
+                                                        第三步:對比兩者，並去思索
+                                                        <br>
+                                                       <nobr> <img src="w4-3.png" width="750px" height="550px">
+                                                        <img src="w4-2.png" width="750px" height="550px">
+                                                        </nobr>
+                                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font style="color: red;font-size: 40px;">無</font>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font style="color: red;font-size: 40px;">有</font>
+                                                    </div> 
+                                                    <div class="section" id="s4">
+                                                        第四步:了解html註解打法
+                                                        <br>
+                                                        <img src="w4-1.png" width="1100px" height="550px">
+                                                    </div> 
+                                                            <div class="section" id="s5">
+                                                                收穫:
+                                                                <br>
+                                                                透過這次，我了解到註解的重要性以及縮排可讓自己可以更清楚程式架構
+                                                                <br>
+                                                                <div class="before" onclick="location.href='week3.html'">上一周</div>
+                                                                <div class="home" onclick="location.href='index.html'">回首頁</div>
+                                                                <div class="next" onclick="location.href='w5.html'">下一周</div>
+                                                            </div> 
+                                                           
+                    </div>
+                            <script>
+                                	AOS.init();
+								$( "#example" ).fullpage({
+									navigation: true, // 顯示導行列
+									navigationPosition: "right" // 導行列位置
+								});
+						    </script>
+              </body>                  
+    </html>
